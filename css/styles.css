@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+
+    /* margin: 20px; */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input {
+    margin-bottom: 15px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .tag-btn {
+    margin: 5px 1px;
+    border: 1px solid gray;
+  }
+
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  #popup p {
+    margin: 0;
+  }
+
+  button[type="submit"], [type="button"] {
+    background-color: #488b4b;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #6cb16f;
+
+  }
+
+  button[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    padding: 10px 15px;
+  }
+
+  .tag-btn {
+    margin: 5px;
+  }
+
+  /* Styling for the modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+
+  /* Close button for the modal */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  
+table {
+  width: 100%;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+.edit-btn {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Style for the label */
+label {
+  font-weight: bold;
+}
+
+/* Style for the select dropdown */
+select {
+  padding: 8px 12px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Style for the options */
+option {
+  padding: 8px 12px; /* Adjust padding as needed */
+}
+
+/* Style for when the dropdown is expanded */
+select:focus {
+  border-color: #555; /* Change border color on focus */
+}
+
+/* Style for the dropdown arrow */
+select::-ms-expand {
+  display: none; /* Hide the default arrow on IE */
+}
+
+/* Style for the dropdown arrow (non-IE browsers) */
+select::after {
+  content: "\25BC"; /* Unicode character for the dropdown arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust distance from the right edge */
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure arrow doesn't interfere with click */
+}
+
+
+
+#download {
+  /* display: inline-block; */
+  padding: 5px 10px;
+  background-color: #5ac21e; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 170px;
+    margin: auto;
+}
+
+#download a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+
+#check a{
+  text-decoration: none;
+  color: #f40000;
+}
+
